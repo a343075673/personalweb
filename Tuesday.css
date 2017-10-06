@@ -1,0 +1,215 @@
+.button {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    border-radius: 28px;
+    text-shadow: 1px 1px 3px #666666;
+    font-family: Courier New;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #d93434);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #d93434);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #d93434);
+    background-image: -o-linear-gradient(top, #3cb0fd, #d93434);
+    background-image: linear-gradient(to bottom, #3cb0fd, #d93434);
+    text-decoration: none;
+}
+body{
+    background: url("picture/1506707322645.png");
+    background-size: cover;
+}
+.font1{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px lightblue, 0 0 5px darkblue;
+    font-size: 50px;
+}
+.font2{
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: dimgrey;
+    width: 100%;
+   position: fixed;
+    border-radius: 10px;
+    clear: both;
+    display: inline-block;
+}
+
+li {
+    float: left;
+    font-family: "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: lightpink;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    height: auto;}
+.row{
+    width: 30%;
+    height: auto;
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+padding: 5px;
+width: 300px;
+box-shadow: 10px 10px 5px grey;
+}
+h2,h1{
+    animation-name: heading2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.w3{
+    animation-name: heading1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes heading2 {
+    from{text-shadow: 0px 0px red;}
+    to {text-shadow: 3px 3px 10px pink;}
+
+}
+@media only screen and (max-width: 700px)  {
+   .container{
+        display: flex;
+        flex-direction:column;
+       }
+    li{
+        float: none;
+        text-align: center;
+      }
+    }
+
+@keyframes heading1{
+    from{  opacity: 0.0;}
+    to{ opacity: 2;}
+
+}
+
+@keyframes plane{
+    from{  transform: rotateX(0deg);
+        transform: rotateY(0deg);
+        transform: rotateZ(0deg);}
+    to{ transform: rotateX(360deg);
+        transform: rotateY(360deg);
+        transform: rotateZ(360deg);}
+
+}
+.plane:hover{
+    animation-name: plane;
+    animation-duration: 5s;
+
+}
+
+
+
+
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+.main{
+   padding-top: 60px;
+}
+
+.profileImg {
+    opacity: 1;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 50%;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    left:13%;
+    top:200px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.main:hover .profileImg {
+    opacity: 0.3;
+}
+
+.main:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: lightblue;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+a{
+    text-decoration: none;
+}
+
+
+
